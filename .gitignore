@@ -1,0 +1,28 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Local presentation runtime and intermediate exports
+node_modules/
+.codex-finalizer/
+build_deck.mjs
+build_redesign.mjs
+output/
+
+# Local credentials
+.env
+.env.*
+!.env.example
