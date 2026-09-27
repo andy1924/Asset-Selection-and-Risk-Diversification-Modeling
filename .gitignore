@@ -16,7 +16,7 @@ htmlcov/
 .vscode/
 
 # Local presentation runtime and intermediate exports
-node_modules/
+node_modules
 .codex-finalizer/
 build_deck.mjs
 build_redesign.mjs
