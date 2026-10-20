@@ -62,7 +62,7 @@ Aim for **6 minutes**, excluding questions. Speak conversationally, at roughly 1
 
 > The difference between forty-seven and thirty-three is fourteen extra category incidences. Dividing fourteen by the correct count, thirty-three, gives forty-two point four two percent inflation. This percentage describes the counting error. It doesn’t measure portfolio risk, and it doesn’t mean fourteen individual stocks each appeared exactly twice.
 
-### Slide 7: Verification in six lines
+### Slide 7: What the code does
 
 **2:55–3:25 · 30 seconds**
 
@@ -88,21 +88,21 @@ Aim for **6 minutes**, excluding questions. Speak conversationally, at roughly 1
 
 > Consider an asset with a high dividend, no high-volatility tag, and no ESG tag. It satisfies both rules, so it passes. Now give it all three tags. It fails the first rule, even though it is ESG compliant. This separates two questions: does any valid combination exist, and does this particular asset qualify? The CNF expression below rewrites the same policy as an AND of OR clauses. Our code checks that both forms agree on every assignment.
 
-### Slide 10: Run the proof
+### Slide 10: Run the checks
 
 **4:40–5:20 · 40 seconds**
 
 [Use the displayed output, or run the two prepared commands below. Avoid typing explanations into the terminal.]
 
-> Here’s the program output. Direct union and inclusion–exclusion both return thirty-three, with seventeen assets outside the categories. The policy check finds four passing assignments and confirms agreement with CNF on all eight. The tests also check the reconstructed membership counts. Everything runs with Python’s standard library. This demonstrates the counting and policy logic on our constructed data. Real market use would need validated asset data and a clearly defined investment mandate.
+> Here’s the program output. Direct union and inclusion–exclusion both return thirty-three, with seventeen assets outside the categories. The policy check finds four passing assignments and confirms agreement with CNF on all eight. The tests also check the reconstructed membership counts. Everything runs with Python’s standard library. These are reproducible counting and logic checks on constructed data, not investment-risk measurements. Real market use would need validated asset data and a clearly defined mandate.
 
-### Slide 11: A count you can audit
+### Slide 11: Why the code matters
 
 **5:20–5:45 · 25 seconds**
 
 [Pause on 33.]
 
-> Our main result is thirty-three distinct tagged assets. Set theory explains the count, and Boolean logic makes each selection decision traceable. However, these tags alone cannot establish diversification or predict losses. Measuring financial risk would also require portfolio weights and relationships between asset returns. Our project provides a verified counting and screening foundation.
+> Our main result is thirty-three distinct tagged assets. The code checks that result two independent ways, so a counting error becomes visible. It also checks every truth assignment against the equivalent CNF, catching policy mismatches. These checks audit our logic, but they cannot establish diversification or predict losses. Measuring financial risk would require portfolio weights and relationships between asset returns.
 
 ### Slide 12: References
 
